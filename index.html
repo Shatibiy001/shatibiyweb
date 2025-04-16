@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="announcement-bar">
+            <div class="scroll-text">
+              🍯 Welcome to Shatibiy Beekeeping – 100% Pure Honey | Bee Training (Golden & Bronze Packages) | Harvesting Kits Available | 📞 +2349131449706 | ✉️ adelekeuthman83@gmail.com
+            </div>
+          </div>
+          
+          </header>
+    <section id="home" class="hero">
+        
+        <div class="hero-content">
+            <h1 class="dynamic-text"></h1>
+            <p>Experience the golden essence of nature, crafted with care for your health and happiness.</p>
+            <button class="cta" onclick="window.location.href='#honey-orders'">Contact Us or Book a Service</button>
+        </div>
+    </section>
+
+      
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p id="aboutText" class="hidden"></p>
+            <button onclick="toggleAboutText()" class="read-more-btn">Read More</button>
+        </div>
+    </section>
+      
+    
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+            <img src="c:\Users\Dell\Desktop\website honey\Harvesting-your-honey-farm.jpg" alt="Raw Honey">
+            <h3>Raw Honey</h3>
+            <p>Pure, unfiltered, and packed with natural goodness.</p>
+            <button class="cta" onclick="showProductDetails('Raw Honey')">Learn More</button>
+            </div>
+            <div class="product-card">
+            <img src="c:\Users\Dell\Desktop\website honey\flavored-honey.jpg.jpg" alt="Flavored Honey">
+            <h3>Flavored Honey</h3>
+            <p>Delicious honey infused with natural flavors.</p>
+            <button class="cta" onclick="showProductDetails('Flavored Honey')">Learn More</button>
+            </div>
+            <div class="product-card">
+            <img src="c:\Users\Dell\Desktop\website honey\honeycomb.jpg.jpeg" alt="Honeycomb">
+            <h3>Honeycomb</h3>
+            <p>Experience honey in its most natural form.</p>
+            <button class="cta" onclick="showProductDetails('Honeycomb')">Learn More</button>
+            </div>
+        </div>
+        <div id="product-details" class="hidden">
+            <h3 id="product-title"></h3>
+            <p id="product-description"></p>
+            <button class="cta" onclick="closeProductDetails()">Close</button>
+        </div>
+       
+        <section id="product-intro-section" class="product-intro-section">
+            <p id="product-intro">
+                Explore our range of honey products, from raw honey to flavored varieties, and discover the perfect choice for your taste and needs. Our honey is sourced from the finest apiaries, ensuring unmatched quality and taste. Whether you're looking for a natural sweetener or a health booster, we have something for everyone.
+            </p>
+        </section>
+
+        
+        <button onclick="updateProductIntro()">Learn More</button>
+    
+
+    <main>
+        <section id="story">
+            <h2>Our Story</h2>
+            <p id="story-text">Click the button below to read our story!</p>
+            <button id="load-story">Load Story</button>
+        </section>
+    </main>
+
+    <section class="production-process">
+        <h2>Our Honey Production Process</h2>
+      
+        <div class="slider-container">
+          <button class="nav-btn nav-left" onclick="scrollSlider(-1)">‹</button>
+          <div class="slider" id="slider">
+            <div class="slide">
+              <img src="Nectar Collection.jpg" alt="Step 1">
+              <h3>Nectar Collection</h3>
+              <p>Bees gather nectar from flowers and bring it back to the hive.</p>
+            </div>
+            <div class="slide">
+              <img src="hive-processing.jpg" alt="Step 2">
+              <h3>In-Hive Processing</h3>
+              <p>Nectar is processed by bees using enzymes and moisture reduction.</p>
+            </div>
+            <div class="slide">
+              <img src="Honey Harvesting.jpg" alt="Step 3">
+              <h3>Honey Harvesting</h3>
+              <p>Beekeepers collect honeycombs carefully to avoid disturbing the hive.</p>
+            </div>
+            <div class="slide">
+              <img src="production.jpg" alt="Step 4">
+              <h3>Filtering & Testing</h3>
+              <p>Raw honey is filtered and tested for purity, taste, and safety.</p>
+            </div>
+            <div class="slide">
+              <img src="Packaging.jpg" alt="Step 5">
+              <h3>Packaging</h3>
+              <p>Honey is bottled, sealed, and labeled in eco-friendly containers.</p>
+            </div>
+          </div>
+          <button class="nav-btn nav-right" onclick="scrollSlider(1)">›</button>
+        </div>
+
+        <main>
+            <section id="values">
+                <h2>Our Values</h2>
+                <p id="values-text">Click the button below to learn about our values!</p>
+                <div class="tabs">
+                    <div class="tab" id="sustainability-tab">Sustainability</div>
+                    <div class="tab" id="community-tab">Community Involvement</div>
+                    <div class="tab" id="quality-tab">Commitment to Quality</div>
+                </div>
+                <div class="tab-content active" id="sustainability-content">
+                    <p>We are committed to eco-friendly practices that protect our environment and promote biodiversity.</p>
+                </div>
+                <div class="tab-content" id="community-content">
+                    <p>We believe in giving back to our community through education and support for local initiatives.</p>
+                </div>
+                <div class="tab-content" id="quality-content">
+                    <p>Our honey is produced with the highest standards, ensuring that you receive only the best nature has to offer.</p>
+                </div>
+            </section>
+        </main>
+      
+        <section class="shipping-info">
+            <div class="shipping-container">
+              <h2>Shipping Information</h2>
+              <p class="shipping-intro">
+                We offer fast and reliable shipping options to ensure your honey arrives fresh and safely. Here’s everything you need to know about our delivery services and costs.
+              </p>
+          
+              <div class="shipping-options">
+                <div class="shipping-option">
+                  <h3>Standard Shipping</h3>
+                  <p class="shipping-description">
+                    Delivered within 5-7 business days. Free for orders over ₦25,000.
+                  </p>
+                  <p><strong>Cost:</strong> ₦1,500</p>
+                </div>
+          
+                <div class="shipping-option">
+                  <h3>Express Shipping</h3>
+                  <p class="shipping-description">
+                    Get your honey in 2-3 business days with our Express Shipping option.
+                  </p>
+                  <p><strong>Cost:</strong> ₦2,500</p>
+                </div>
+          
+                <div class="shipping-option">
+                  <h3>International Shipping</h3>
+                  <p class="shipping-description">
+                    We ship worldwide! Delivery times vary by location.
+                  </p>
+                  <p><strong>Cost:</strong> ₦12,000 (varies by location)</p>
+                </div>
+              </div>
+          
+              <div class="shipping-details">
+                <h3>Shipping Details</h3>
+                <p>All orders are processed within 24 hours and shipped on business days only (Monday-Friday). Once shipped, you’ll receive tracking information to monitor your order’s progress. Delivery times vary depending on the shipping method selected and your location.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="payment-contact-section" id="honey-orders">
+            <div class="payment-container">
+              <h2>🍯 Order Our Pure Honey</h2>
+              <p class="intro">
+                We supply top-quality natural honey in a variety of sizes — whether you're a household buyer or wholesaler, we've got you covered!
+              </p>
+          
+              <div class="sizes-wrapper">
+                <div class="size-box">
+                  <h4>👨‍👩‍👧‍👦 Retail Sizes</h4>
+                  <ul>
+                    <li>🍯 100ml</li>
+                    <li>🍯 250ml</li>
+                    <li>🍯 500ml</li>
+                    <li>🍯 1 Litre</li>
+                    <li>🍯 And more...</li>
+                  </ul>
+                </div>
+                <div class="size-box">
+                  <h4>🏢 Wholesale Sizes</h4>
+                  <ul>
+                    <li>🍯 5 - 100 Litres</li>
+                    <li>🍯 100 - 350 Litres</li>
+                    <li>🍯 350 - 500 Litres</li>
+                    <li>🍯 500 - 1,000 Litres</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <p class="note">
+                Ready to place an order? Contact us directly for current pricing, availability, and delivery options. Wholesale and bulk pricing available.
+              </p>
+          
+              <div class="contact-methods">
+                <p><strong>📞 WhatsApp/Call:</strong> <a href="https://wa.me/2349131449706" target="_blank">+234 913 144 9706</a></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:adelekeuthman83@gmail.com">adelekeuthman83@gmail.com</a></p>
+              </div>
+          
+          <!-- Floating WhatsApp Button -->
+          <a href="https://wa.me/2349131449706" class="whatsapp-float" target="_blank" title="Chat with us">
+            🟢
+        </a>
+
+        <section class="beekeeping-services" id="services">
+            <div class="container">
+              <h2 class="main-heading">🍯 Our Beekeeping Services</h2>
+              <p class="highlight">
+                We offer premium honey, expert-led training, essential beekeeping kits, and professional harvesting support — all tailored for aspiring and experienced beekeepers.
+              </p>
+          
+              <div class="service-box">
+                <h3>🧡 Pure Honey Sales</h3>
+                <p>We provide 100% original and natural honey in different quantities for both wholesale and retail. Enjoy the golden goodness straight from the hive.</p>
+              </div>
+          
+              <div class="service-box">
+                <h3>🎓 Beekeeping Training Programs</h3>
+                <p>Whether you’re just starting out or looking to scale up, our training options give you all the knowledge and hands-on practice you need.</p>
+                <ul class="training-list">
+                  <li><strong>🥇 Golden Package:</strong> Full mentorship, live hive training, business setup & advanced tips.</li>
+                  <li><strong>🥉 Bronze Package:</strong> Basic training on hive management and harvesting essentials.</li>
+                </ul>
+                <p><strong>more details about the packages, <a href="honey.pdf.pdf" target="_blank">CLICK HERE</a>.</p></strong>
+                <p class="note">Fill out the form below to join the tranning.</p>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScbwOodbQSJ79eSjlz3KmKs3t05SXWlw4qpHseV1cVCiUPSAw/viewform" method="get" target="_blank">
+                    <button type="submit"> Applicant Form</button>
+
+    
+                </form>
+              </div>
+          
+              <div class="service-box">
+                <h3>🛠️ Beekeeping Kits for Sale</h3>
+                <p>Get the right tools for efficient honey harvesting. We sell beginner and professional harvesting kits at competitive prices.</p>
+              </div>
+          
+              <div class="service-box">
+                <h3>🌾 Harvesting Support</h3>
+                <p>Need expert help during harvest season? We assist with safe, hygienic, and effective honey extraction for your apiary.</p>
+              </div>
+              
+
+              <section id="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial active">
+                        <p>"The honey from Shatibiy is the best I've ever tasted! It's pure, delicious, and reminds me of summer days!" - AbdullahL.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I love supporting a local business that cares about sustainability. Their honey is top-notch!" - Hidayah.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Every jar of honey is a work of art. The flavor is incredible, and I can't get enough!" - Samuel.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Fantastic quality and amazing service! I recommend Shatibiy to everyone!" - James.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The best honey I've ever had! It’s a staple in my kitchen now." - Shajary.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Shatibiy honey is simply amazing. My family loves it!" - Adebayo.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I appreciate the quality and purity of their honey. Highly recommended!" - Ngozi.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Their honey has a unique taste that stands out. Great product!" - Chinedu.</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I’ve been using their honey for months, and it’s always consistent in quality." - Funke.</p>
+                    </div></div>
+                </div>
+                <button id="prev-testimonial">Previous</button>
+                <button id="next-testimonial">Next</button>
+            </section>
+              
+            <form class="service-form" action="https://formspree.io/f/xrbpdajp" method="POST">
+                <h4>📩 Contact Us or Book a Service</h4>
+                
+                <input type="hidden" name="_captcha" value="false">
+          
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                
+                <label for="message-type">Message Type</label>
+                <select name="message-type" id="message-type" required>
+                  <option value="" disabled selected>Select Message Type</option>
+                  <option value="Training Inquiry">Training Inquiry</option>
+                  <option value="Honey Purchase">Honey Purchase</option>
+                  <option value="Harvesting Support">Harvesting Support</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                </select>
+                
+                <textarea name="message" placeholder="What can we help you with?" required></textarea>
+          
+                <button type="submit">Send Request</button>
+              </form>
+            </div>
+          </section> 
+
+    <footer>
+        <p>&copy; 2025 Honey Pure. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
